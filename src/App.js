@@ -2,20 +2,14 @@ import './App.css';
 import React, {useState} from 'react'
 import axios from 'axios'
 /*
-Here are the features it should have:
-
-• Functioning Upvote and Downvote controls
-
- 
-
-Reddit’s API is public and you don’t need a key. You can use static data from e.g. http://www.reddit.com/r/reactjs.json
-
-
+Never got a working score updater, but other than that everything is working
 */
 
 const baseUrl = " http://www.reddit.com/r/reactjs.json"
 
 function Voting(post) {
+  //const [score, setScore] = useState(0)
+  //setScore(post.post.post.data.score)
   let score = post.post.post.data.score
   return (
     <>
